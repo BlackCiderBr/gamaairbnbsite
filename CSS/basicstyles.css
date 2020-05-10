@@ -1,0 +1,65 @@
+#main_header{
+ background-image: url("../images/header_0.jpg");
+ padding-top: 50px;
+ padding-bottom: 50px;
+ background-position: bottom;
+ background-size: cover;
+}
+
+#maintitle{
+    font-family: 'self modum', sans-serif;/*fonte instalada direto do servidor*/
+    font-size: 72px;
+    color:whitesmoke;
+    text-shadow: 3.5px 3.5px 3px black
+}
+
+#motto{
+    color:whitesmoke;
+    text-shadow: 1.5px 1.5px 2px black
+}
+
+/*Card formating*/
+.card{
+    background-color: seashell;
+}
+.card:hover{
+    background-color: khaki;
+}
+.card:hover > .card-img-top{
+    animation: imgAnim .7s;
+}
+
+.card-title{
+    font-family: 'coolvetica', sans-serif;
+}
+
+/*Image animation*/
+@keyframes imgAnim{
+    from {transform: scale(0.9);}
+    to {transform: scale(1);}
+}
+
+.btn{
+    background-color: rgb(243, 230, 197);
+    color: black;
+    border-color: lightsteelblue;
+}
+
+.btn:hover{
+    background-color: rgb(84, 150, 84);
+    border-color: black;
+}
+
+/*self fonts*/
+@font-face{
+    font-family: 'self modum';
+    src: url('../fonts/Modum.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: 'coolvetica';
+    src: url('../fonts/coolvetica rg.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
